@@ -1,0 +1,40 @@
+{
+  "profiles": {
+    "IntegrationMacroServer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5172"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+        "commandName": "Docker",
+        "launchBrowser": false,
+        "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+        "publishAllPorts": true,
+        "environmentVariables": {
+            "DOTNET_ENVIRONMENT": "Docker"
+        }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:38124",
+      "sslPort": 0
+    }
+  }
+}
